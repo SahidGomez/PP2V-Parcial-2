@@ -12,6 +12,7 @@ public class Inventario : MonoBehaviour
     void Start()
     {
         InventorySlot = Slots.GetComponentsInChildren<Transform>();
+        //setActive 
         InventorySlot[ActiveSlot].GetChild(0).gameObject.SetActive(true);
     }
 
